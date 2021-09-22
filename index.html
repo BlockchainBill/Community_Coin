@@ -12,7 +12,9 @@
     <header>
         <img src="src/images/Cardano_Coin_64px.png" width="64" height="64" alt="Community Coin Logo" id="Logo">
         <div>Community Coin - An NFT for the Cardano Community.</div>
-        <a href="credits.html" title="Credits" id="Credits">Credits</a>
+        <a href="index.html" title="Home">Home</a>
+        <a href="about.html" title="About">About</a>
+        <a href="credits.html" title="Credits">Credits</a>
     </header>
     <h1 id="Top">Community Coin - Home</h1>
     <section>
@@ -33,6 +35,99 @@
                 The accounts are sorted into the coin with higher scores closer to the inner circle </div></p>
         </article>
     </section>
+    <section>
+        <table className='table table-sm'>
+            <thead>
+              <tr>
+                <th scope='col'> <strong> Interaction </strong> </th>
+                <th scope='col'> <strong> Score </strong> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <strong> Heart </strong> <small> (Like) </small> </td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td> <strong> RT </strong> <small> (Retweet) </small> </td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td> <strong> QT </strong> <small> (Quote tweet) </small> </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td> <strong> @ </strong> <small> (Mention) </small> </td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+
+  <!--  return (
+    <div className='container d-flex flex-column align-items-center'>
+      <div className='col-10 col-lg-6'>
+        <h2>Coin Generator</h2>
+        <span className='fs-3'>A dynamic Cardano NFT generator</span>
+
+        <div className='mt-4 mb-3 d-flex align-items-end w-100'>
+          <div className='flex-fill'>
+            <label className='form-label' htmlFor='twitter-username'>
+              Enter your Twitter handle in the field below to generate your Community Coin
+            </label>
+            <input
+              className='form-control'
+              id='twitter-username'
+              placeholder='@somebody'
+              autoComplete='off'
+              autoCapitalize='off'
+              autoCorrect='off'
+              spellCheck='false'
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              onKeyPress={(e) => {
+                if (canGenerate && e.key === 'Enter') {
+                  goToResults();
+                }
+              }}
+            />
+          </div>
+          <button
+            className='btn btn-primary ms-2'
+            type='button'
+            onClick={goToResults}
+            disabled={!canGenerate}>
+            Create
+          </button>
+        </div>
+
+        <div className='form-check form-switch'>
+          <input
+            className='form-check-input'
+            type='checkbox'
+            id='likes-switch'
+            checked={ignoreLikes}
+            onChange={(e) => setIgnoreLikes(e.target.checked)}
+          />
+          <label className='form-check-label' htmlFor='likes-switch'>
+            Ignore likes
+          </label>
+        </div>
+        <small className='form-text'>
+          If you really heart the heart button, you can choose to ignore them 
+          for this generator (which may improve wait time).
+        </small>
+      </div> -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     <section>
         <h3>entities to outline code vs characters </h3>
             <p>Testing entities &OpenCurlyDoubleQuote; &lt;, &gt;, &amp;, and &copy; &CloseCurlyDoubleQuote; </p>
