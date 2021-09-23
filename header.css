@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #0710D7;
+    margin-bottom: 15px;
+    padding: 30px 10px 7px 15px;
+    border-bottom: 10px solid black;
+    color: floralwhite;
+}
+header > div > a:link, header > div > a:visited{
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    border: 5px solid black;
+    color:floralwhite;
+    background-color: darkslateblue;
+    text-align: center;
+}
+#Logo{
+    position: absolute;
+    top: 5px;
+}
+#Motto{
+    text-align: center;
+    font-size: 1.5em;
+    position: middle;
+    margin-bottom: 22px;
+}
+body{
+    background-color: #76A2F2;
+}
