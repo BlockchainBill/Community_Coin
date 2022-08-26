@@ -28,6 +28,60 @@
     <p>$communitycoin 
     </p>
     <br>
+    return (
+        <div className='container d-flex flex-column align-items-center'>
+          <div className='col-10 col-lg-6'>
+            <h2>Coin Generator</h2>
+            <span className='fs-3'>A dynamic Cardano NFT generator</span>
+    
+            <div className='mt-4 mb-3 d-flex align-items-end w-100'>
+              <div className='flex-fill'>
+                <label className='form-label' htmlFor='twitter-username'>
+                  Enter your Twitter handle in the field below to generate your Community Coin
+                </label>
+                <input
+                  className='form-control'
+                  id='twitter-username'
+                  placeholder='@somebody'
+                  autoComplete='off'
+                  autoCapitalize='off'
+                  autoCorrect='off'
+                  spellCheck='false'
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  onKeyPress={(e) => {
+                    if (canGenerate && e.key === 'Enter') {
+                      goToResults();
+                    }
+                  }}
+                />
+              </div>
+              <button
+                className='btn btn-primary ms-2'
+                type='button'
+                onClick={goToResults}
+                disabled={!canGenerate}>
+                Create
+              </button>
+            </div>
+    
+            <div className='form-check form-switch'>
+              <input
+                className='form-check-input'
+                type='checkbox'
+                id='likes-switch'
+                checked={ignoreLikes}
+                onChange={(e) => setIgnoreLikes(e.target.checked)}
+              />
+              <label className='form-check-label' htmlFor='likes-switch'>
+                Ignore likes
+              </label>
+            </div>
+            <small className='form-text'>
+              If you really heart the heart button, you can choose to ignore them 
+              for this generator (which may improve wait time).
+            </small>
+          </div> 
     <br>
     <br>
     <h2> Concept pieces </h2>
