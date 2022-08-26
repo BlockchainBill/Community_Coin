@@ -1,12 +1,12 @@
 //Canvas Settings
-let canvas = document.getElementById("canvas");
+let canvas = document.getElementById("mycanvas");
 let context = canvas.getContext("2d");
 
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
-canvas.height = windowHeight * 0.5;
-canvas.width = windowWidth * 0.5;
+canvas.height = windowHeight;
+canvas.width = windowWidth;
 
 class Circle {
     constructor(xpos, ypos, radius, color) {
