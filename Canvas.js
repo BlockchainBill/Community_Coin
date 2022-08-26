@@ -30,8 +30,8 @@ let createCircle = function(circle) {
 }
 
 for ( var numbers = 0; numbers <6; numbers++ ) {
-    let random_x = Math.random() * (windowWidth * 0.5);
-    let random_y = Math.random() * (windowHeight * 0.5);
+    let random_x = Math.random() * windowWidth;
+    let random_y = Math.random() * windowHeight;
 
     let my_circle = new Circle(random_x, random_y, 50, "black");
     all_circles.push(my_circle);
