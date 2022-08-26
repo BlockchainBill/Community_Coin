@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Community Coin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='header.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header class="Header">
+      <div class="UpperTitle"> 
+        <div id="Motto">Community Coin - An NFT for the Cardano Community.</div>
+        <img src="src/images/Cardano_Coin_64px.png" width="64" height="64" alt="Community Coin Logo" id="Logo">
+      </div> 
+      <div>
+          <a href="index.html" title="Home">Home</a>
+          <a href="project.html" title="Project">Project Details</a>
+          <a href="mint.html" title="Mint">Mint</a>
+          <a href="cardanocircle.html" title="Pools">Your Cardanoic Circle</a>
+          <a href="pools.html" title="Pools">Pools & Catalyst</a>
+          <a href="about.html" title="About">About</a>
+          <a href="credits.html" title="Credits">Credits</a>
+      </div>
+    </header>
+    <h1 id="Top">Welcome!</h1>
+    <script src="cardanocircle.js"></script>
+    <div id="root">
+        <div id="app">
+            <div class="container-md" id="filled circle">
+                <div class="row gy-4">
+                    <div class="col">
+                        <div id="result-wrapper">
+                            <div id="cicrle-layout">
+                                <div>
+                                    <div class="konvajs-content" role="presentation" style="position: relative; user-select: none; width: 616.016px; height: 616.016px;">
+                                        <canvas width="616" height="616" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 616.016px; height: 616.016px; display: block;">
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <div class="d-flex flex-row align items-center mb-4">
+                            <button type="button" id="reset-button" class="btn btn-primary me-4">Unhide all</button>
+                            <button type="button" id="export-button" class="btn btn-primary">Download image</button>
+                        </div>
+                        <div class="border border-primary p-3 rounded-3 mb-4">ABC123
+                        </div>
+                        <div class="w-100 accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customize-color" aria-expanded="false">Customize Color</button></h2>
+                                <div id="customize-color" class="accordion-collapse collapse" style="">
+                                    <div class="accordion-body">
+                                        <div class="mb-2 d-flex align-items-center">
+                                            <input id="background-colour" type="color" value="#ceb4fd">
+                                            <label class="form-label m-0 ms-2" for="background-colour">Background</label>
+                                        </div>
+                                        <div class="mb-2 d-flex align-items-center">
+                                            <input id="circleBorders-colour" type="color" value="#282c34">
+                                            <label class="form-label m-0 ms-2" for="circleBorders-colour">Circle borders</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customize-color" aria-expanded="false">Who's in my Cardanic Circle?</button></h2>              
+                                <div id='whos-in-my-circles' className='accordion-collapse collapse'>
+                                  <div className='accordion-body'>
+                                    {itemDistribution.map((circle, index) => (
+                                      <div className='mb-2'>
+                                        <span className='fw-bold fs-5'>Circle {index + 1}</span>
+                                        <div className='d-flex flex-column align-items-start'>
+                                          {circle.map((friend) => (
+                                            <span className='fw-bold'>
+                                              {!!friend.url ? (
+                                                <a className='link-primary' href={friend.url} rel='noreferrer' target='_blank'> @{friend.username} </a>
+                                              ) : (
+                                                <span>@{friend.username}</span>
+                                              )}
+                                            </span>
+                                          ))}
+                                        </div>
+                                      </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
