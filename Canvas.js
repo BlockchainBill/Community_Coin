@@ -10,8 +10,6 @@ var windowWidth = window.innerWidth;
 canvas.height = windowHeight * 0.5;
 canvas.width = windowWidth * 0.5;
 
-canvas.style.background = #ff8;
-
 class Circle {
     constructor(xpos, ypos, radius, color) {
         this.xpos = xpos;
