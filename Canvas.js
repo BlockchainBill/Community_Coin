@@ -1,5 +1,5 @@
 //Canvas Settings
-let canvas = document.getElementById("mycanvas");
+var canvas = document.getElementById("mycanvas");
 let context = canvas.getContext("2d");
 
 var windowHeight = window.innerHeight;
@@ -17,7 +17,7 @@ class Circle {
     }
     draw(context)  {
         context.beginPath();
-        context.arc(this.xpos, this.ypos, this.radius, 0, MATH.PI * 2, false);
+        context.arc(this.xpos, this.ypos, this.radius, 0, Math.PI * 2, false);
         context.stroke();
         context.closePath();
     }
