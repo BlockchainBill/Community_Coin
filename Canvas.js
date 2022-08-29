@@ -48,8 +48,8 @@ for (var i = 1; i <= 6; ++i) {
   }
 
 //Fourth circle of 6
-var radius4 = 280;
-var offsetToChild4Center = 25;
+var radius4 = 300;
+var offsetToChild4Center = 20;
 var totalOffset4 = offsetToParentCenter - offsetToChild4Center;
 for (var i = 1; i <= 6; ++i) {
     var childdiv4 = document.createElement('div4');
