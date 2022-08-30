@@ -27,7 +27,7 @@ header > div > a:link, header > div > a:hover {
 }
 #Logo{
     position: absolute;
-    top: 5px;
+    top: 20px;
 }
 #Motto{
     text-align: center;

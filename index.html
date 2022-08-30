@@ -6,7 +6,7 @@
     <title>Community Coin</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/bootstrap.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/header.css'><link rel='stylesheet' type='text/css' media='screen' href='/src/css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/body.css'>
 </head>
 <body>
@@ -26,12 +26,14 @@
           <a href="Testpage.html" title="Testpage">Testpage</a>
       </div>
     </header>
-    <h1 id="Top">Welcome!</h1>
+
+    <div class="container-fluid">
+      <h1 id="Top">Welcome!</h1>
       <section>
-        <p>Tired of the hacky copypasta 10k pfp cartoon animal NFTs? I am too and thats when I thought of this CNFT idea - the "Community Coin".</p>
-        <p>I'm (obviously) not an experienced full-stack developer (as a friend recently said: "1993 called, they want their CSS back").</p>
-        <p>This is my attempt to BUIDL something worthwhile in the Cardano Community.</p>
-        <p>If anything comes of this, I have a fun thing I enjoy making and I have learned a lot in the process.</p>  
+        <p>Tired of the hacky copypasta 10k pfp cartoon animal NFTs? I am too and thats when I thought of this CNFT idea - the "Community Coin".
+           I'm (obviously) not an experienced full-stack developer (as a friend recently said: "1993 called, they want their CSS back").
+           This is my attempt to BUIDL something worthwhile in the Cardano Community.
+           If anything comes of this, I have a fun thing I enjoy making and I have learned a lot in the process.</p>  
       </section>
       <section>
         <h2>What is it?</h2>
@@ -41,15 +43,15 @@
       </section>
       <section>
         <h2>How does it work?</h2>
-          <p>This generator uses data that is <strong>publicly available, you don't need to log in or provide your password </strong>.</p>
-          <p>It determines who you interact with the most and it's all based off of your most recent tweets and likes.</p>
-          <p>Note that this is based off of <strong>YOUR</strong> interactions, not when you get liked, RT'ed, QT'ed, or @'ed.</p>
-          <p>Hopefully in the future I can develop a version of this to work that way, but it would likely require more data from you.</p>
-          <p>Additionally, private accounts will not display - that's kinda how privacy works, lol.</p>
-          <p>Then, it counts the number of interactions you've had with each account and then assigns them a score for the coin generator based off the table below.</p> 
-          <p>The accounts are sorted into the coin with higher scores closer to the inner circle</p>
+        <p>This generator uses data that is <strong>publicly available, you don't need to log in or provide your password </strong>.
+           It determines who you interact with the most and it's all based off of your most recent tweets and likes.
+           Note that this is based off of <strong>YOUR</strong> interactions, not when you get liked, RT'ed, QT'ed, or @'ed.
+           Hopefully in the future I can develop a version of this to work that way, but it would likely require more data from you.
+           Additionally, private accounts will not display - that's kinda how privacy works, lol.
+           Then, it counts the number of interactions you've had with each account and then assigns them a score for the coin generator based off the table below.
+           The accounts are sorted into the coin with higher scores closer to the inner circle</p>
       </section>
-    <section>
+      <section>
         <h3>Scoring</h3>
         <table className='table table-sm'>
             <thead>
@@ -62,19 +64,14 @@
               <tr><td> <strong> @ </strong> <small> (Mention) </small> </td><td>3</td></tr>
             </tbody>
           </table>
-    </section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</body>   
-<footer> Disclaimer: This page is a work in progress, I'm still learning HTML, CSS, & Javascript. </footer>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <footer> Disclaimer: This page is a work in progress, I'm still learning HTML, CSS, & Javascript. </footer>
+    </div> 
 <script src='src/js/jquery.js'></script>
 <script src='src/js/bootstrap.min.js'></script>
+</body>
 </html>
