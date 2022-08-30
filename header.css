@@ -19,15 +19,23 @@ header > div > a:link, header > div > a:visited{
     background-color: darkslateblue;
     text-align: center;
 }
+header > div > a:link, header > div > a:hover {
+    background-color: lightblue;
+    color: black;
+    border: 5px solid white;
+    font-weight: bold;
+}
 #Logo{
     position: absolute;
     top: 5px;
 }
 #Motto{
     text-align: center;
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 2em;
     position: middle;
     margin-bottom: 22px;
+    margin-left: 64px;
 }
 body{
     background-color: #76A2F2;

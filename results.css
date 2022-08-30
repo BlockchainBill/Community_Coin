@@ -1,0 +1,22 @@
+#root {
+    background-color: #5464d1;
+}
+#app {
+    background-color: #ba54d1;
+    margin: (50px 50px 50px 50px);
+    padding: (50px 50px 50px 50px);
+    width: 90%;
+}
+#results-wrapper {
+    background-color: #7a3255;
+    width: 80%;
+    padding-top: 100%;
+    position: relative;
+}
+#results-wrapper * {
+    background-color: #327a51;
+    position: absolute;
+    width: 60%;
+    top: 0;
+    left: 0;
+}

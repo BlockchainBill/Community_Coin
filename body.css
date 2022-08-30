@@ -1,0 +1,43 @@
+body{
+    background-color: #76A2F2;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: aqua;
+    opacity: .3;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 15px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
